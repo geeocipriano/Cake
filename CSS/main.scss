@@ -84,10 +84,18 @@ a.active, a:hover {
 			font-weight: bold;
 			border-radius: 5em;
 			margin-top: -.2em;
-			padding: .5em;
+			padding: 5px 15px;
 		}
 	}
 	
+}
+
+.cakes {
+	padding-top: 10em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 }
 
 
