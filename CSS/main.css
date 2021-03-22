@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root {
+  --primary-color: #ff6162;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +10,7 @@
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -20,7 +24,7 @@ nav {
 }
 
 .checkbtn i {
-  color: orange;
+  color: var(--primary-color);
 }
 
 nav ul {
@@ -43,7 +47,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: orange;
+  background: var(--primary-color);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -65,10 +69,41 @@ a.active, a:hover {
 /* Section Hero */
 .hero {
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 2em;
 }
 
 .hero p {
-  font-size: 1em;
+  padding-top: 1em;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero .btn {
+  margin-top: 2em;
+}
+
+.hero .btn .exp-btn {
+  color: white;
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -.2em;
+  padding: .5em;
 }
 
 @media (max-width: 952px) {
@@ -89,7 +124,7 @@ a.active, a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: orange;
+    background: var(--primary-color);
     top: 80px;
     left: -100%;
     text-align: center;

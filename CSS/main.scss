@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+:root {
+	--primary-color: #ff6162;
+}
 
 * {
 	padding: 0;
@@ -18,7 +21,7 @@ nav {
 	padding: 1em;
 }
 .checkbtn i {
-	color: orange;
+	color: var(--primary-color);
 }
 nav ul {
 	float: right;
@@ -37,7 +40,7 @@ nav ul li a {
 	text-transform: uppercase;
 }
 a.active, a:hover {
-	background: orange;
+	background: var(--primary-color);
 	transition: .5s;
 }
 .checkbtn {
@@ -57,10 +60,34 @@ a.active, a:hover {
 
 .hero {
 	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	h1 {
+		font-weight: 800;
+		font-size: 2em;
+	}
 
 	p {
-		font-size: ;
+		padding-top: 1em;
+		font-size: 15px;
+		font-weight: 600;
 	}
+	.btn {
+		margin-top: 2em;
+
+		.exp-btn {
+			color: white;
+			background-color: var(--primary-color);
+			border: 3px solid var(--primary-color);
+			font-weight: bold;
+			border-radius: 5em;
+			margin-top: -.2em;
+			padding: .5em;
+		}
+	}
+	
 }
 
 
@@ -84,7 +111,7 @@ a.active, a:hover {
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: orange;
+		background: var(--primary-color);
 		top: 80px;
 		left: -100%;
 		text-align: center;
