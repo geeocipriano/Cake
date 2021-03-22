@@ -107,6 +107,38 @@ a.active, a:hover {
 	h1 {
 		padding-bottom: 2em;
 	}
+
+	.cakes-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			padding: .5em 1em;
+		}
+
+		p {
+			padding: 0 4em;
+			font-size: 15px;
+			color: black;
+			font-weight: 800;
+			align-items: center;
+		}
+
+		.btn {
+			padding: 2em;
+			.order-btn {
+			color: white;
+			background-color: var(--primary-color);
+			border: 3px solid var(--primary-color);
+			font-weight: bold;
+			border-radius: 5em;
+			margin-top: -.2em;
+			padding: 5px 15px;
+			}
+		}
+	}
 }
 
 
