@@ -1,2 +1,2 @@
 # Cake
- Recirando o Template Cake do Colorlib
+ Recriando o Template Cake do Colorlib
