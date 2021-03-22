@@ -141,6 +141,39 @@ a.active, a:hover {
 	}
 }
 
+.story {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	img {
+		padding: .5em;
+	}
+
+	h1 {
+		padding: .5em;
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	p {
+		font-weight: 400;
+		padding: .5em;
+	}
+
+	.btn {
+		padding: 1em;
+			.story-btn {
+			color: white;
+			background-color: var(--primary-color);
+			border: 3px solid var(--primary-color);
+			font-weight: bold;
+			border-radius: 5em;
+			margin-top: -.2em;
+			padding: 5px 15px;
+		}
+	}
+}
 
 
 

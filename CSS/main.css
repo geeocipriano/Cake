@@ -178,6 +178,48 @@ a.active, a:hover {
   padding: 5px 15px;
 }
 
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.story img {
+  padding: .5em;
+}
+
+.story h1 {
+  padding: .5em;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.story p {
+  font-weight: 400;
+  padding: .5em;
+}
+
+.story .btn {
+  padding: 1em;
+}
+
+.story .btn .story-btn {
+  color: white;
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -.2em;
+  padding: 5px 15px;
+}
+
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
